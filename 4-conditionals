@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Conditional statements and taking inputs in bash
+
+read -p "What is your name ? " name
+echo "Hello there $name"
+
+read -p "What is your age ? " age
+echo "Age is $age "
+
+if [ $age -ge 19 ]
+then
+    echo "Use you vote wiseley for these elections."
+elif [ $age -eq 18 ]
+then
+    echo " Guess who jus turned 18 !! "
+else
+    echo " You can not vote "
+fi
+

@@ -29,3 +29,17 @@ num7=1.21
 num8=3.12
 num9=$(python3.6 -c "print($num7+$num8)")
 echo $num9
+
+num10=12
+cat<< END
+Operation on increment decrements
+number is $num10
+preincrement yields $((++num10))
+post increment yileds $((num10++))
+now number is $num10
+same for decrements
+num $num10 becomes $((--num10))
+now $((num10--))
+becomes $num10
+
+END
