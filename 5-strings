@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# playing with some strings
+
+str1=""
+str2="world"
+str3="yolo"
+
+
+if (( "$str1" )); then
+    echo "String $s1 is not empty"
+else
+    echo "String is empty"
+fi
+
+# check if two strings are equal
+
+read -p "Complete: Hello _______ " str4
+
+if [ $"str4" == "$str2" ]; then
+    echo "Bingo "
+else
+    echo " Hello world !! "
+fi
+
+
+
