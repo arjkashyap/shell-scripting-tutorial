@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Some basic functions
+
+getDate(){
+    echo "Current Date"
+    date
+
+    return
+}
+
+getDate
+
+# Difference in global and local variables
+
+name="Arjun"        # global varialbe
+
+funcName(){
+    local name="Kashyap"  # local variable
+    return
+}
+
+funcName
+
+echo "Variable value is $name"
+
+# passing arguments in a function
+
+sumFunction(){
+    local l1=$1
+    local l2=$2
+    local l3=$((l1+l2))
+    echo $l3
+}
+
+n1=13
+n2=17
+res=$(sumFunction n1 n2)
+echo "Sum using the sumFuncion is $res"
