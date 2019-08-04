@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# More on conditions
+
+read -p "Enter a number " num
+
+if (( $num > 13 )); then
+    echo "Number is greater then 13"
+fi
+
+if (( $num == 13 )); then
+    echo "Number is equal to 13"
+else
+    echo "Number is smaller than 13"
+fi
+
+if (( $num%2==0 )); then
+    echo "It is an even number"
+else
+    echo "It is an odd number "
+fi
+
+# logical operators
+if (( (($num>0)) && (($num<10)) )); then
+    echo "The number is in range 0 to 10"
+fi
+
