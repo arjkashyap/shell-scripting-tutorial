@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Some basic arithematics
+
+declare -r NUM=13       #global
+num1=5
+num2=7
+
+echo "Global number is $(NUM)"
+echo "The sum of ${num1} and ${num2} is $((num1+num2))"
+
+prod=($((num1*num2)))
+dif=($((num1-num2)))
+div=($((num1/num2)))
+
+echo "The product of ${num1} and ${num2} is ${prod}"
+echo "The difference of ${num1} and ${num2} is ${dif}"
+echo "The division  of ${num1} and ${num2} yields ${div}"
+
+echo "Five square is $((5**2))."
+
+var=4
+let var2+=5
+echo "Increment of $var yields $var2"
+
+# using python
+
+num7=1.21
+num8=3.12
+num9=$(python3.6 -c "print($num7+$num8)")
+echo $num9

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# First bash script
+
+name="smoothBlackwell"
+
+echo "Hello World its mr. ${name}"
+

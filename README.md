@@ -1,0 +1,1 @@
+Learning basic shell scripting.\n Topics covered:  Vim, Input, Output, Variables, Math, Functions, Executing Python Functions, Conditionals, Strings, Arrays, Looping, Positional Parameters, Parameter Expansions and a whole lot more.
