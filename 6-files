@@ -1,0 +1,26 @@
+#!/bin/bash
+
+touch ./tstFile.txt
+
+file = "./tstFile.txt"
+
+# Check statements on files
+if [ -e "$file"]; then
+    echo "tstFile exists"
+fi
+
+if [ -f "$file"]; then
+    echo "tstFile is a normal file"
+fi
+
+if [ -d "$file"]; then
+    echo "tstFile is a directory
+else
+    echo "It is not a dir"
+fi
+
+if [ -r "$file" ]; then
+    echo "The file is readable"
+fi
+
+
