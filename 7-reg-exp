@@ -1,0 +1,31 @@
+#!/bin/bash
+
+read -sp "Enter the secret key to proceed. " secret
+if [[ $secret == "password" ]]; then
+    echo " Password matched"
+else
+    echo "Password mismatch"
+    exit
+fi
+
+
+# some basic regular expressions
+read -p "Enter 8 degit roll number: " roll
+
+# pattern for regular expression
+
+pat="^[0-9]{8}$"
+
+if [[ $roll =~ $pat ]];then
+    echo "Roll number is valid"
+else
+    echo "ROll number is invalid"
+fi
+
+read -p "Enter two numbers to add: " num1 num2
+
+num3=$((num1+num2))
+echo "Sum of $num1 and $num2 is $num3"
+
+
+
