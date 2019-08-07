@@ -27,5 +27,18 @@ read -p "Enter two numbers to add: " num1 num2
 num3=$((num1+num2))
 echo "Sum of $num1 and $num2 is $num3"
 
+# Taking input with spaces.
+
+IFS=","
+
+read -p "Enter the two numbers to sum seperated by a coma" num1 num2
+num1=${num1//[:blank:]/}
+num2=${num2//[:blank:]/}
+
+sum=$((num1+num2))
+echo "Sum of $num1 and $num2 is $sum"
+
+IFS = "$OIFS"
+
 
 
