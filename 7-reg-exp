@@ -28,17 +28,27 @@ num3=$((num1+num2))
 echo "Sum of $num1 and $num2 is $num3"
 
 # Taking input with spaces.
-
+#Input filed seperators
 IFS=","
 
-read -p "Enter the two numbers to sum seperated by a coma" num1 num2
+read -p "Enter the two numbers to sum seperated by a coma: " num1 num2
 num1=${num1//[:blank:]/}
 num2=${num2//[:blank:]/}
 
 sum=$((num1+num2))
 echo "Sum of $num1 and $num2 is $sum"
 
-IFS = "$OIFS"
+IFS="$OIFS"
+
+# Parameter expansions
+
+name="Arjun"
+
+echo "${name}'s learning shell scripting."
+
+samp_str="Dogs like to play"
+echo "${samp_str//Dogs/cats}"
 
 
+echo "My name is ${name:-bing}"
 
