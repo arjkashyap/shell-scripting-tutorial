@@ -1,2 +1,31 @@
 #!/bin/bash
 
+# Case syntax 
+
+read -p "Enter you age: " age
+
+case $age in
+    (0-4)]
+        echo " Too young to go to school "
+        ;;              # ; means if condition true stop looking
+    5)
+        echo " 5 is a good age to start school "
+        ;;
+    [6-9]|1[0-8])
+        std=$((age-5))
+        echo " You shud be in ${std}th standard "
+        ;;
+    *)                   # default
+        echo "Too old for school "
+        ;;
+esac
+
+# Terniary operator
+ 
+can_vote=0      # bool condition
+
+((age>=18?(can_vote=1):(can_vote=0)))
+
+if (($can_vote==1));then
+    echo "YOu can vote"
+fi
