@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Parameters expansions and strings
+
+read -p "Enter a test string" str
+
+echo "Length of string is: ${#str} "
+echo "Char at position 3 is ${str:2}"
+echo "Slicing string ${str:2:5}"
+echo "Char after c ${str#*A}"
+
