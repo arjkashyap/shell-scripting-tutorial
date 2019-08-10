@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Arrays 
+
+num_arr=(7 21 28 33)
+
+echo "Element inserted at 2"
+num_arr[2]=123
+
+echo "Printing the array "
+for i in ${num_arr[*]}; do
+    echo $i
+done
+
+echo "element at 3 is ${num_arr[2]}"
+
+#appending elements
+
+num_arr+=(31 9)
+
+for i in ${num_arr[*]};do
+    echo $i
+done
