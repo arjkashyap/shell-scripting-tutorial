@@ -21,3 +21,13 @@ num_arr+=(31 9)
 for i in ${num_arr[*]};do
     echo $i
 done
+
+echo "Length of array is ${#num_arr[@]}"
+
+sorted_arr=($(for i in "${num_arr[@]}"; do
+    echo $i;
+done | sort))
+
+for i in ${sorted_arr[*]}; do
+    echo $i
+done
