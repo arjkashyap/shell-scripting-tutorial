@@ -1,0 +1,9 @@
+#!/bin/bash
+
+read -p "" user_in
+
+if (( $user_in == "Y" || $user_in == "y" )); then
+    echo "YES"
+else
+    echo "NO"
+fi
