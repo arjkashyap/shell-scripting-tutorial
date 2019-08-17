@@ -1,0 +1,10 @@
+#!/bin/bash
+read -p "" n1
+read -p "" n2
+if [ $n1 -eq $n2 ]; then
+    echo "X is equal to Y"
+elif [ $n1 -gt $n2 ]; then
+    echo "X is greater than Y"
+elif [ $n1 -lt $n2 ]; then
+    echo "X is less than Y"
+fi
