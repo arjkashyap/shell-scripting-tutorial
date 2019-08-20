@@ -1,9 +1,9 @@
 #!/bin/bash
 
-read -p "" user_in
+read -p "" x
 
-if (( $user_in == "Y" || $user_in == "y" )); then
+if [[ "$x" == "Y" || "$x" == "y" ]]; then
     echo "YES"
-else
+elif [[ "$x" == "N" || "$x" == "n" ]]; then
     echo "NO"
 fi
