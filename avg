@@ -1,0 +1,21 @@
+#!/bin/bash
+
+declare -a arr
+
+read t
+
+i=0
+while [[ i -lt t ]]; do
+    read a
+    arr+=$a
+    i=$((i+1))
+done
+
+sum=0
+for i in "${a[@]}"; do
+    echo "Element is ${a[i]}"
+    echo "Sum is $sum" 
+    sum=$((sum+a[i]))
+done
+echo $sum
+

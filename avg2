@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read t
+num=0
+while [ $t -gt 0 ]
+do
+    read n
+    num=$((num+n))
+    t=$((t-1))
+done
+
